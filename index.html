@@ -96,7 +96,7 @@ function quote(){
  ${o.rows.map((r,i)=>{const c=(k,cls='')=>`<td class="${cls}" contenteditable data-r="${i}" data-k="${k}">${esc(k=='q'||k=='p'?fmt(r[k]):r[k])}</td>`;
  return `<tr><td class="c">${i+1}</td>${c('n')}${c('d')}${c('b','c')}${c('s','c')}${c('u','c')}${c('q','c')}${c('p','r')}<td class="r" id="t${i}"></td><td class="x no-print" data-a="delr" data-i="${i}">✕</td></tr>`}).join('')}</table>
  <button class="add" data-a="addr" title="Thêm dòng">+</button>
- <div class="bottom"><div class="note">AusAsia Technologies hỗ trợ miễn phí chi phí giao hàng.<br>Các vấn đề phát sinh The Sentry có thể liên hệ trực tiếp với Sale để được hỗ trợ</div>
+ <div class="bottom"><div class="note">AusAsia Technologies hỗ trợ miễn phí chi phí giao hàng.<br>Các vấn đề phát sinh có thể liên hệ trực tiếp với Sale để được hỗ trợ</div>
  <div class="sum"><div><span>Tổng Cộng</span><span>VND <span id="sub"></span></span></div><div><span>VAT <input data-f="vat" type="number" value="${S.vat}">%</span><span>VND <span id="vat"></span></span></div><div><span>Tổng cộng (đã bao gồm VAT)</span><span>VND <span id="tot"></span></span></div></div></div>
  <div class="terms"><h4>ĐIỀU KHOẢN VÀ ĐIỀU KIỆN</h4>1. Báo giá này có giá trị trong vòng: 15 ngày<br>2. Giá được niêm yết bằng VND.<br>3. Điều khoản thanh toán: Thanh toán trong vòng 10 ngày kể từ ngày lập hóa đơn.<br>4. Thời gian tính cước kể từ ngày nhận bàn giao vị trí văn phòng cần quản lý.<br>5. Thời hạn hợp đồng: 12 tháng kể từ ngày ký.</div></div>`;
 }
